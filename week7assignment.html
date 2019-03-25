@@ -1,0 +1,54 @@
+<html>
+<head>
+    <title>Week 7 assignment</title>
+  <p><b>What my typical weeks entail</b></p>
+</head>
+<body>
+  <b><p id="demo"></p></b>
+  <img id='default_image' src='' >
+  <script>
+    const day = new Date().getDay();
+    var i = 0;
+    switch (day) {
+
+      case 0:
+      document.getElementById("demo").innerHTML = "Day of chruch, it is Sunday";
+      var default_image = document.getElementById('default_image');
+      do{
+      var default_img_src = "church.jpg";
+      default_image.src = default_img_src;
+      }while(i==30);
+        break;
+
+      case 1:
+        document.getElementById("demo").innerHTML=("ALL day school day, it's Monday");
+        var default_image = document.getElementById('default_image');
+        do{
+            var default_img_src = "pointpark.jpg";
+            default_image.src = default_img_src;
+        }while(i==30);
+        break;
+
+      case 2:
+        document.write("NBA players only, its Tuesday");
+        break;
+
+      case 3:
+        document.write("Humpday, its Wednesday");
+        break;
+
+      case 4:
+        document.write("Thirsty thursday, its Thursday");
+        break;
+
+      case 5:
+        document.write("Woohoo, its Friday");
+        break;
+
+      case 6:
+        document.write("Yes, its Saturday");
+        break;
+    }
+  </script>
+  </body>
+</html>
